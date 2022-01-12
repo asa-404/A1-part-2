@@ -1,10 +1,11 @@
 {
     "version": 1,
     "request": {
-        "url": "https://api.themoviedb.org/3/movie/now_playing",
+        "url": "https://api.themoviedb.org/3/search/movie/",
         "method": "GET",
         "params": {
-            "api_key": true
+            "api_key": true,
+            "query": true
         }
     },
     "response": {
