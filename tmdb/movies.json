@@ -1,0 +1,69 @@
+{
+    "version": 1,
+    "request": {
+        "url": "https://api.themoviedb.org/3/movie/now_playing",
+        "method": "GET",
+        "params": {
+            "api_key": true
+        }
+    },
+    "response": {
+        "ctype": "application/json",
+        "tablePath": "$.results[*]",
+        "schema": {
+            "id": {
+                "target": "$.id",
+                "type": "int"
+            },
+            "original_language": {
+                "target": "$.original_language",
+                "type": "string"
+            },
+            "original_title": {
+                "target": "$.original_title",
+                "type": "string"
+            },
+            "adult": {
+                "target": "$.adult",
+                "type": "boolean"
+            },
+            "backdrop_path": {
+                "target": "$.backdrop_path",
+                "type": "string"
+            },
+            "overview": {
+                "target": "$.overview",
+                "type": "string"
+            },
+            "popularity": {
+                "target": "$.popularity",
+                "type": "float"
+            },
+            "poster_path": {
+                "target": "$.poster_path",
+                "type": "string"
+            },
+            "release_date": {
+                "target": "$.release_date",
+                "type": "string"
+            },
+            "title": {
+                "target": "$.title",
+                "type": "string"
+            },
+            "video": {
+                "target": "$.video",
+                "type": "boolean"
+            },
+            "vote_average": {
+                "target": "$.vote_average",
+                "type": "float"
+            },
+            "vote_count": {
+                "target": "$.vote_count",
+                "type": "int"
+            }
+        },
+        "orient": "records"
+    }
+}
