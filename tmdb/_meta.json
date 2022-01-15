@@ -1,6 +1,8 @@
 {
     "tables": [
         "movies",
-        "person"
+        "person",
+        "tv",
+        "genres"
     ]
 }
