@@ -3,6 +3,8 @@
         "movies",
         "person",
         "tv",
-        "genres"
+        "genres",
+        "toprated_movie",
+        "toprated_tv"
     ]
 }
